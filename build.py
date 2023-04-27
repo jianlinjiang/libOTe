@@ -16,7 +16,7 @@ def replace(argv, find, rep):
 if __name__ == "__main__":
 
     argv = sys.argv
-    # only to build slient vole
-    replace(argv, "--bitpolymul", "-DENABLE_SILENT_VOLE=ON -DENABLE_BITPOLYMUL=ON -DENABLE_SOFTSPOKEN_OT=ON -DENABLE_MRR_TWIST=ON -DENABLE_SSE=ON -DENABLE_SILENTOT=ON -DNO_SILVER_WARNING=ON")
-    # replace(argv, "--all", "-DENABLE_ALL_OT=ON")
+    # only to build silent vole
+    replace(argv, "--bitpolymul", "-DENABLE_SILENT_VOLE=ON -DENABLE_BITPOLYMUL=ON -DENABLE_SOFTSPOKEN_OT=ON -DENABLE_MRR_TWIST=ON -DENABLE_SSE=ON -DENABLE_SILENTOT=ON -DNO_SILVER_WARNING=ON -DCMAKE_BUILD_TYPE=DEBUG")
+    replace(argv, "--debug", "-DCMAKE_BUILD_TYPE=DEBUG")
     cryptoTools.build.main("libOTe", argv[1:])

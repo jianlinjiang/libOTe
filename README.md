@@ -52,7 +52,7 @@ The library can be built with libsodium, all OT protocols enabled and boost asio
 ```
 git clone https://github.com/osu-crypto/libOTe.git
 cd libOTe
-# only need to build slient vole
+# only need to build silent vole
 python build.py --boost --sodium --bitpolymul
 ```
 The main executable with examples is `frontend` and is located in the build directory, eg `out/build/linux/frontend/frontend.exe, out/build/x64-Release/frontend/Release/frontend.exe` depending on the OS. 
